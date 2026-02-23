@@ -1,0 +1,166 @@
+body {
+  background-color: #fcddd6;
+  margin: 0;
+}
+
+.flex-mobile-column {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 481px) {
+  .flex-mobile-column {
+    flex-direction: column;
+  }
+}
+
+p, a, h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1, h2 {
+  color: #4c956c;
+}
+
+h3 {
+  color: #d68c45;
+}
+
+p, a {
+  color: #2c6e49;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* menu */
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-menu { 
+  display: none;
+}
+
+.nav-menu.active { 
+  display: flex;
+  transition: 1s ease;
+}
+
+.menu-list {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  transition: 1s ease;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  padding: 2rem;
+}
+
+.burger-menu {
+  --button-color: #4c956c;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+}
+
+@media (max-width: 481px) {
+  .burger-menu {
+    overflow: unset;
+  }
+}
+
+.burger-menu .burger {
+  transition: translate 1s, rotate 1s;
+}
+
+.burger-menu[aria-expanded="true"] .burger {
+  translate: 10px -10px;
+  rotate: 0.125turn;
+}
+
+.burger-menu .line {
+  transition: 1s;
+  stroke-dasharray: 60 31 60 300;
+}
+
+.burger-menu[aria-expanded="true"] .line {
+  stroke-dasharray: 60 105 60 300;
+  stroke-dashoffset: -90;
+}
+/* menu end */
+
+/* about */
+.about img {
+  height: 15rem;
+}
+
+/* Works */
+.work .work.in-progress {
+  width: 25rem;
+}
+
+.works {
+  list-style-type: none;
+  padding: 0;
+}
+
+.works ul { padding: 0; }
+
+.work {
+  height: 5px;
+  width: 5px;
+  border-radius: 2.5px;
+  margin-bottom: 5rem;
+  opacity: 0;
+  transition: 400ms ease;
+}
+
+.work.show {
+  opacity: 1;
+  height: auto;
+  width: 40rem;
+  border-radius: 40px;
+}
+
+@media (max-width: 481px) {
+  .work.show  {
+    width: 20rem;
+    height: auto;
+  }
+}
+
+.work-item {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  justify-content: space-around;
+}
+
+@media (max-width: 481px) {
+  .work-item {
+    flex-direction: column;
+  }
+}
+/* works end */
+
+/* section */
+.section {
+  margin: 5rem;
+}
+
+@media (max-width: 479px) {
+  .section {
+    margin: 1rem;
+  }
+}
+
+footer {
+  background-image: url(assets/footer-bg.png);
+  height: 30rem;
+}
