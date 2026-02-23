@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Carla Stockalper</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,38 +27,91 @@
 
   <nav class="nav-menu" id="nav-menu">
     <ul class="menu-list flex-mobile-column">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Contact</a></li>
+      <li class="menu-item"><a  href="#about">About</a></li>
+      <li class="menu-item"><a href="#work">Work</a></li>
+      <li class="menu-item"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 </div>
 <!-- end hamburger menu -->
+<section class="section">
+  <div class="welcome">
+    <h1>Welcome, I&#39;m Carla<span class="hide">Stockalper</span>, I like to build things</h1>
+    <h2>I have experience <span id="role">in Web Development</span></h2>
+  </div> 
+</section>
+<!-- skills section -->
+<section class="section">
+  <h2>Experience</h2>
+  <div class="skills-cards">
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <h2>Development Tools</h2> 
+          <p>I have expert level experience with PHP, JS, HTML, CSS including frameworks like React and Vue.js</p>
+          <p>I've contributed and managed sites built on Wordpress, Shopify, Squarespace, Wix and custom PHP software,
+            namely XML and JSON parsers.</p>
+          </p>
+        </div>
+      </div>
+      <div class="face face2">
+        <h2>Development</h2>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <h2>Design Tools</h2> 
+          <p>Adobe Illustrator, Photoshop, InDesign, Sketch, Mural, Figma, Canva</p>
+          <p>My go-to is Adobe Illustrator (graphics for this site were made with Illustrator)</p>
+        </div>
+      </div>
+      <div class="face face2">
+        <h2>Design</h2>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <h2>Project Management</h2> 
+          <p>Jira, Confluence, Asana, Trello, Basecamp, ServiceNow</p>
+          <p>I've primarily used Jira for project work and others for maintenance</p>
+          <p>My experience is mostly in Agile workflows but have worked on Waterfall and hybrid based projects.</p>
+        </div>
+      </div>
+      <div class="face face2">
+        <h2>Project Management</h2>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- About Section -->
-<section class="section">
-  <h2>Hi, I'm Carla, thanks for stopping by! </h2>
+<section id="about" class="section">
+  <h2>About</h2>
   <div class="about flex-mobile-column">
     <div>
-      <p>I’m a multidisciplinary web leader with nearly 20 years of creative and technical experience across design, 
+      <p>I&#39;m a multidisciplinary web leader with nearly 20 years of creative and technical experience across design, 
         development, and product delivery. I studied Digital Media (film, photography, computing arts) at UC San 
         Diego and co‑founded a yoga studio where I led marketing and digital strategy; the business will mark its 
         20th year in 2026. In 2016 I moved to New York, completed a full‑stack JavaScript immersion, and built React 
         projects before joining a major publishing company. From 2017–2025 I worked as a senior developer, tech lead, 
         and web development manager, creating custom features and selecting appropriate off‑the‑shelf solutions. </p>
-      <p>I currently consult on digital strategy, am building an organizational/goal‑setting app, and am trying to grow 
-        a food forest in my backyard. When I’m not working you’ll find me in the garden, on the slopes or at the beach. 
-        Check my CV and past work, and reach out if you’d like to collaborate or share gardening tips!</p>
+      <p>I currently consult on digital strategy, am building an organizational/goal‑setting app and trying to grow 
+        a food forest in my backyard. When I&#39;m not working you&#39;ll find me in the garden, on the slopes or at the beach. 
+        Check out my past work and CV, and reach out if you&#39;d like to collaborate or share gardening tips!</p>
+      <div class="btn">
+        <a href="assets/Carla_Stockalper_Web_Development_Technical_Project_Manager.pdf" download="newfilename" target="_blank">Download CV</a>
+      </div>
     </div>
   </div>
 </section>
 <!-- End About Section -->
 
 <!-- Work Zone -->
-<section class="section">
+<section id="work" class="section">
 <h2>Selected Works</h2>
 <h3>In Progress...</h3>
-<li class="work">
   <div class="work-item">
     <img class="work in-progress" src="assets/tesserae.png" alt="">
     <div>
@@ -67,58 +121,82 @@
         as offer users the opportunity to create an archive of past achievements. More to come, it's still in the baby
         stages of development. The dream is to build the mobile app then fit it to work as a browser extension as well as 
         connect to a print-on-demand service.</p>
+      <p>Stay tuned.... I aim to have a working prototype for testing by mid March, 2026.</p>
     </div>
-</div>
-</li>
-<h3>Publishing Websites</h3>
-    <ul class="works">
-      <li class="work">
-        <div class="work-item">
-          <img class="work" src="assets/jp.png" alt="">
-          <div>
-            <h3>James Patterson Author Website</h3>
-            <p>a little about this project</p>
-          </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Publishing Websites</h2>
+  <div class="work-cards">
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <h3>Hachette Book Group Site</h3>
+          <p>I joined HBG as a WordPress developer shortly before launching their WordPress VIP platform site. I helped migrate dozens of standalone sites into the platform, then served as senior developer, tech lead, and web development manager — overseeing custom feature development, site launches, user management, and product roadmaps.
+          </p>
+          <a href="https://www.hachettebookgroup.com/" target="_blank">Visit Site</a>
         </div>
-      </li>
-      <li class="work">
-        <div class="work-item">
-          <div>
-            <h3>Road Trip USA Website</h3>
-            <p>Stack: Stand alone WordPress website.</p>
-            <p>Data: Manually Added</p>
-            <p>My role: Site maintenance; plugin updates, user maintenance, content updates. One challenge with rtusa
-              was the request to utilize bespoke corporate Wordpress tools on a standalone site. The solution involved
-              retrofitting custom built plugins, for example, a newsletter sign up tool integrated with a corporate CRM
-              account, to work with a separate WP build and separate newsletter tool.</p>
-            <a href="https://www.roadtripusa.com/" target="_blank">Visit Site</a>
-          </div>
-          <img class="work" src="assets/rtusa.png" alt="">
       </div>
-      </li>
-      <li class="work">
-        <div class="work-item">
-          <img class="work" src="assets/novel-suspects.png" alt="">
-          <div>
-            <h3>Novel Suspects Website</h3>
-            <p>a little about this project</p>
-          </div>
+      <div class="face face2">
+        <img class="work-2" src="assets/rtusa.png" alt="">
+      </div>
+    </div>
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <h3>James Patterson Author Site</h3>
+          <p>I worked as the Senior Developer for this migration and redesign project, setting up the WordPress child theme file 
+            structure, DNS configuration to leverage domain based theme loading. This site called for several custom plugins to make product data 
+            available to the WP dashboard for editors. I worked closely with a designer/FE dev to build these 
+            plugins and blocks; setting up data feeds while they styled them. I owned code review, 
+            testing, code deployment and final DNS switch. My role included ongoing site maintenance and updates</p>
+          <a href="https://www.jamespatterson.com/" target="_blank">Visit Site</a>
         </div>
-      </li>
-      <li class="work">
-        <div class="work-item">
-          <div>
-            <h3>Page-A-Day</h3>
-            <p>a little about this project</p>
-          </div>
-          <img class="work" src="assets/pad.png" alt="">
       </div>
-      </li>
-    </ul>
-  </section>
+      <div class="face face2">
+        <img class="work-2" src="assets/jp.png" alt="">
+      </div>
+    </div>
+    <div class="card">
+      <div class="face face1">
+        <div class="content">
+          <h3>Road Trip USA Website</h3>
+          <p>Stack: Stand alone WordPress website.</p>
+          <p>My role: Site maintenance; plugin updates, user maintenance, content updates. One challenge with rtusa
+            was the request to utilize bespoke corporate Wordpress tools on a stand alone site. The solution involved
+            retrofitting some of the custom built plugins, for example, a newsletter sign up tool integrated with a corporate CRM
+            account, to work with a separate WP build and separate newsletter tool.</p>
+          <a href="https://www.roadtripusa.com/" target="_blank">Visit Site</a>
+        </div>
+      </div>
+      <div class="face face2">
+        <img class="work-2" src="assets/rtusa.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- End Work Zone -->
+
+<section class="section">
+  <div id="contact">
+    <h2>Contact</h2>
+    <div class="contact-container flex-mobile-column">
+      <div class="contact-item"></div>
+    </div>
+  </div>
+</section>
+
 <footer>
-  
+  <div class="footer-copy">
+    <p>
+      &copy; 
+      <script>document.write(new Date().getFullYear())</script> 
+      Carla Stockalper. All Rights Reserved
+    </p> 
+  </div>
 </footer>
   <script src="script.js"></script>
 </body>
