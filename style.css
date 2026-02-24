@@ -156,14 +156,6 @@ img.work.in-progress {
     flex-direction: column;
   }
 }
-
-.text-left {
-  margin-left: 3rem;
-}
-
-.text-right {
-  margin-right: 3rem;
-}
 /* works end */
 
 /* section */
@@ -277,6 +269,10 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card img {
+  max-width: 100%;
 }
 
 .card .face.face1 {
@@ -421,6 +417,23 @@ form.form {
 .contact-item:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 481px) {
+  .menu-list {
+    width: unset;
+  }
+}
+
+@media (max-width: 481px) {
+  .card {
+    max-width: 20rem;
+  }
+
+  .card .face.face1 h2, .card .face.face1 p {
+    font-size: 1rem;
+  }
+}
+
 
 @media (max-width: 481px) {
   form.form {
