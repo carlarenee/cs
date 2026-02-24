@@ -46,19 +46,19 @@ ham.addEventListener('click', () => {
 });
 
 // back to top
-const backToTopBtn = document.getElementById("backToTopBtn");
-window.onscroll = function() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        backToTopBtn.style.display = "block";
-    } else {
-        backToTopBtn.style.display = "none";
-    }
-};
+// const backToTopBtn = document.getElementById("backToTopBtn");
+// window.onscroll = function() {
+//     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+//         backToTopBtn.style.display = "block";
+//     } else {
+//         backToTopBtn.style.display = "none";
+//     }
+// };
 
-function scrollToTopFunction() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-  }
+// function scrollToTopFunction() {
+//     window.scrollTo({
+//         top: 0,
+//         behavior: 'smooth'
+//     });
+//   }
 
