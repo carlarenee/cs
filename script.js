@@ -18,22 +18,7 @@ function changeText() {
     role.classList.remove("fade-out");
   }, 300);
 }
-
-// Run every 2 seconds
 setInterval(changeText, 2000);
-
-// Intersection Observer Load
-// const observer = new IntersectionObserver((entries)=> {
-//   entries.forEach((entry)=>{
-//     if(entry.isIntersecting){
-//       entry.target.classList.add("show")
-//     }else{
-//       entry.target.classList.remove("show")
-//     }
-//   })
-// }, {})
-// const workElements = document.querySelectorAll(".work")
-// workElements.forEach(el => observer.observe(el))
 
 // Menu
 const buttons = document.querySelectorAll(".burger-menu");
@@ -59,3 +44,21 @@ ham.addEventListener('click', () => {
   ham.classList.toggle('active');
   menu.classList.toggle('active');
 });
+
+// back to top
+const backToTopBtn = document.getElementById("backToTopBtn");
+window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+};
+
+function scrollToTopFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+  }
+
